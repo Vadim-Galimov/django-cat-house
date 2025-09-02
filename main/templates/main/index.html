@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приют "Кошкодом"</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+<header>
+        <h1>Приют "Кошкодом"</h1>
+    <nav>
+        <a href="{% url 'home' %}">Главная</a>
+        <a href="{% url 'about' %}">О нас</a>
+    <a href="{% url 'help' %}">Как помочь</a>
+    </nav>
+
+</header>
+<main>
+    <section>
+        <h2>Добро пожаловать в приют "Кошкодом"!</h2>
+<p>Мы — уютный уголок в Москве, где бездомные кошки находят заботу, лечение и временный кров. Каждое животное здесь окружено любовью и ждёт своего человека.
+</p>
+<address>Наш адрес: г. Москва, ул. Кошачья, д. 15</address>
+<p>Приходите познакомиться с нашими пушистыми жителями. Возможно, именно здесь вас ждёт новый лучший друг!</p>
+
+    </section>
+
+
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>

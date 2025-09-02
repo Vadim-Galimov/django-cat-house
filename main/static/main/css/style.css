@@ -1,0 +1,46 @@
+
+body {
+background-color: #ffdab9;
+}
+
+header {
+background-color: #ff8c00;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+h1, header a {
+color: #ffdab9;
+}
+
+h2 {
+color: #ff8c00;
+vertical-align: middle;
+}
+
+h1, nav {
+margin: 10px;
+}
+
+header a {
+margin: 10px;
+}
+
+a {
+text-decoration: none;
+}
+
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+section {
+margin: 20px;
+max-width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
