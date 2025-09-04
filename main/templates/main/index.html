@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приют "Кошкодом"</title>
+	{% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Приют 'Кошкодом' в Москве — место, где бездомные кошки находят заботу и дом. Присоединяйтесь к нам!">
+	<meta name="keywords" content="приют для кошек, Кошкодом, Москва, усыновление животных">
+	<meta name="author" content="Приют Кошкодом">
+	<meta property="og:title" content="Приют 'Кошкодом'">
+	<meta property="og:description" content="Уютный уголок в Москве для бездомных кошек.">
+	<meta property="og:image" content="{% static 'main/images/og-image.jpg' %}">
+	<meta property="og:url" content="https://koshkodom.ru">
+	<title>Приют "Кошкодом"</title>
+	<link rel="icon" type="image/x-icon" alt="котик" href="{% static 'main/images/favicon.ico' %}">
+	<link rel="stylesheet" href="{% static 'main/css/normalize.css' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'main/css/style.css' %}"> </head>
 
-
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'main/css/normalize.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-</head>
 <body>
-<header>
-        <h1>Приют "Кошкодом"</h1>
-    <nav>
-        <a href="{% url 'home' %}">Главная</a>
-        <a href="{% url 'about' %}">О нас</a>
-    <a href="{% url 'help' %}">Как помочь</a>
-    </nav>
+	<header>
+		<h1>Приют "Кошкодом"</h1>
+		<nav aria-label="основная навигация"> <a href="{% url 'home' %}">Главная</a> <a href="{% url 'about' %}">О нас</a> <a href="{% url 'help' %}">Как помочь</a> </nav>
+	</header>
+	<main>
+		<section>
+			<h2>Добро пожаловать в приют "Кошкодом"!</h2>
+			<p>Мы — уютный уголок в Москве, где бездомные кошки находят заботу, лечение и временный кров. Каждое животное здесь окружено любовью и ждёт своего человека. </p> <address>Наш адрес: г. Москва, ул. Кошачья, д. 15</address>
+			<p>Приходите познакомиться с нашими пушистыми жителями. Возможно, именно здесь вас ждёт новый лучший друг!</p>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-top">
+			<nav aria-label="основная навигация"> <a href="{% url 'home' %}">Главная</a> <a href="{% url 'about' %}">О нас</a> <a href="{% url 'help' %}">Как помочь</a> </nav>
+			<section><address>
+								<p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+				<p><strong> Email:</strong> <a href="mailto:info@koshkodom.ru">info@koshkodom.ru</a></p>
 
-</header>
-<main>
-    <section>
-        <h2>Добро пожаловать в приют "Кошкодом"!</h2>
-<p>Мы — уютный уголок в Москве, где бездомные кошки находят заботу, лечение и временный кров. Каждое животное здесь окружено любовью и ждёт своего человека.
-</p>
-<address>Наш адрес: г. Москва, ул. Кошачья, д. 15</address>
-<p>Приходите познакомиться с нашими пушистыми жителями. Возможно, именно здесь вас ждёт новый лучший друг!</p>
-
-    </section>
-
-
-</main>
-
-<footer></footer>
-
-
+				 <p><strong>Наши соцсети:</strong>
+					 <a href="https://t.me/koshkodom" aria-label="телеграм кошкодом"><i class="fa-brands fa-telegram"></i></a>
+				<a href="https://vk.com/koshkodom" aria-label="вк кошкодом"><i class="fa-brands fa-vk"></i></a>
+				<a href="https://wa.me/79991234567" aria-label="вотсап кошкодом"><i class="fa-brands fa-whatsapp"></i></a> </p>
+				 <p>Адрес: г. Москва, ул. Кошачья, д. 15 </p>
+			</address> </section>
+			<section>
+				<p>Мы работаем ежедневно с
+					<time datetime="10:00">10:00</time> до
+					<time datetime="19:00">19:00</time>
+				</p>
+				<p>Прием посетителей: с
+					<time datetime="11:00">11:00</time> до
+					<time datetime="18:00">18:00</time>
+				</p>
+			</section>
+		</div>
+		<div class="footer-bottom"> © 2025 Приют 'Кошкодом'. Все права защищены. </div>
+	</footer>
 </body>
+
 </html>
