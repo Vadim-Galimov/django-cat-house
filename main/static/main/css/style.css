@@ -1,6 +1,8 @@
 
 body {
 background-color: #ffdab9;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
 }
 
 header {
@@ -44,3 +46,4 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+
